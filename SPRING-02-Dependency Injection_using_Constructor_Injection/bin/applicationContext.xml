@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="studentbean" class="madak.org.DI_using_constructor_Injection.Student">
+      
+      <!-- we will use only one <constructor arg> element here -->
+      
+		<!-- this constructor arg element will call the int type parametrized constructor -->
+		<constructor-arg value="1603510028" type="int"></constructor-arg>
+      
+      
+
+		<!-- this constructor arg element will invoke the string parameterized 
+			constructor NOTE-if we dont specify the type it will automatical call the 
+			string parameterized constructor -->
+
+		<constructor-arg value="niranjan madak"></constructor-arg>
+		
+		
+
+	</bean>
+
+</beans>
